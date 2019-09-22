@@ -6,13 +6,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should connect to adapter" do
-    byebug
     PeopleController.sales_loft_client.class === SalesLoftApiAdapter
   end
-
-  # test "should return array of people" do
-  # @people = sales_loft_client.getPeople["data"]
-  # @people.length > 0
-  # end
 
 end
