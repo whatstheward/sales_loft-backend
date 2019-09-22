@@ -21,7 +21,14 @@
 /storage/*
 !/storage/.keep
 
+/node_modules
+/yarn-error.log
+
+/public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# ignore .env for storing API keys
+/.env
