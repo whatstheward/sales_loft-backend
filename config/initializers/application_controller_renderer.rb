@@ -6,3 +6,8 @@
 #     https: false
 #   )
 # end
+
+AWS::S3::Base.establish_connection!(
+ :access_key_id   => ENV['SALESLOFT_API_KEY'],
+ :secret_access_key => ENV['S3_SECRET']
+)
